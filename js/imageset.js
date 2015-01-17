@@ -74,7 +74,7 @@ function eventAdd(drinkObjects, select_button,reset_button) {
 /*
  *画像を選択されたことを取得する関数
  */
-function getClick(event) {;
+function getClick(event) {
 	//TODO:配列の中身を全て、操作する必要がある。img1個1個の状態に応じてではないため、スケーラビリティは低い。
 	if(selectedObjects.indexOf(event.target.name) >= 0 ) {
 		selectedObjects.splice(selectedObjects.indexOf(event.target.name),1);
