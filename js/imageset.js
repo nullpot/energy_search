@@ -56,11 +56,12 @@ function eventAdd(drinkObjects, select_button) {
 	if (select_button.addEventListener) { 
 		select_button.addEventListener('click', drawChart, false);
 		select_button.addEventListener('click', getTwitter, false);
+		select_button.addEventListener('click', setTwitterImg, false);
 	} else if (select_button.attachEvent) { //for IE
 		select_button.attachEvent('click', drawChart);
 		select_button.attachEvent('click', getTwitter);
+		select_button.attachEvent('click', setTwitterImg);
 	}
-	
 }
 
 /*
@@ -85,4 +86,5 @@ function getClick(event) {;
 	
 	console.log(selectedObjects);
 }
+
 

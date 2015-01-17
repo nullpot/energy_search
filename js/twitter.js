@@ -1,3 +1,10 @@
+/*
+ *選択された画面をtwitterに反映する関数
+*/
+function setTwitterImg() {
+	document.getElementById("twitter_img").src = imgFolderName + drinks[selectedObjects[0]].image;
+}
+
 function getTwitter(){
 var name = drinks[Number(selectedObjects[0])].name;
 
