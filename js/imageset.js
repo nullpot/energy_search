@@ -1,6 +1,7 @@
 window.onload = init;
 
-var selectedObjects = [0, 2]; //選択された画像名のリスト
+var selectedObjects = []; //選択された画像名のリスト
+var imgFolderName = "img/"
 
 function init() {
 	var drinkObjects = [];
@@ -8,10 +9,16 @@ function init() {
 	var raizin = document.getElementById("raizin");
 	var redbull = document.getElementById("redbull");
 	var monster_energy = document.getElementById("monster_energy");
+	var repo_d = document.getElementById("repo_d");
+	var ari_v = document.getElementById("ari_v");
+	var tiobita = document.getElementById("tiobita");
 	
 	drinkObjects[0] = raizin;
 	drinkObjects[1] = redbull;
 	drinkObjects[2] = monster_energy;
+	drinkObjects[3] = repo_d;
+	drinkObjects[4] = ari_v;
+	drinkObjects[5] = tiobita;
 	
 	imageset(drinkObjects);
 	eventAdd(drinkObjects);
@@ -24,7 +31,7 @@ function imageset(drinkObjects) {
 	var count = 0;
 	drinkObjects.forEach(
 	   function (drinkObject) {
-		   drinkObject.src = "img/" +  drinks[count].image;
+		   drinkObject.src = imgFolderName + drinks[count].image;
 		   count++;
 	   }
     );
@@ -50,8 +57,21 @@ function eventAdd(drinkObjects) {
  *画像を選択されたことを取得する関数
  */
 function getClick(event) {;
-	console.log(event.target); //FIXME:IE比対応
-	//FIXME:追加削除が考慮できていない->配列の中身見て、追加削除する。
-	selectedObjects[selectedObjects.length] = event.target.name; 
+	//TODO:配列の中身を全て、操作する必要がある。img1個1個の状態に応じてではないため、スケーラビリティは低い。
+	if(selectedObjects.indexOf(event.target.name) >= 0 ) {
+		selectedObjects.splice(selectedObjects.indexOf(event.target.name),1);
+	} else {
+		selectedObjects[selectedObjects.length] = event.target.name; 
+	}
+	
+	//画像を選択された時に画像を切り替える
+	if(event.target.className = "selected") { //TODO:クラス存在を確認する関数があった気がする(jqueryのaddClassとか)。。。
+		event.target.className = "";
+		//event.target.classList.remove("selected");
+	} else {
+		event.target.className = "selected";
+		//event.target.classList.add("selected");
+	}
+	
 	console.log(selectedObjects);
 }
