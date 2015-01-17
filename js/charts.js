@@ -23,17 +23,19 @@ function createDataTable() {
 
     // 列（選択したドリンク）の設定
     data.addColumn("string", "成分");
-    data.addColumn("number", "ライジン");
-    data.addColumn("number", "レッドブル");
-    
-    // 行データの設定
-    var integrant_keys = Object.keys(drinks[0]).filter(function(key){
-      return (key !== "name" && key !== "image");
+    selectedObjects.forEach(function(selected_index){
+      data.addColumn("number", drinks[Number(selected_index)].name);
     });
-    integrant_keys.forEach(function(integrant, row_no){
-      data.setValue(row_no, 0, integrants[row_no]);
-      data.setValue(row_no, 1, drinks[0][integrant]);
-      data.setValue(row_no, 2, drinks[1][integrant]);
+
+    // 行データの設定
+    var integrant_keys = Object.keys(drinks[0]).filter(function(key) {
+        return (key !== "name" && key !== "image");
+    });
+    integrant_keys.forEach(function(integrant, row_no) {
+        data.setValue(row_no, 0, integrants[row_no]);
+        selectedObjects.forEach(function(selected_index, i) {
+            data.setValue(row_no, i+1, drinks[Number(selected_index)][integrant]);
+        });
     });
 
     return data;

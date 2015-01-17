@@ -1,6 +1,6 @@
 window.onload = init;
 
-var selectedObjects = []; //選択された画像名のリスト
+var selectedObjects = [0, 2]; //選択された画像名のリスト
 
 function init() {
 	var drinkObjects = [];
