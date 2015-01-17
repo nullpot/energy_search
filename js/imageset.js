@@ -1,7 +1,7 @@
 window.onload = init;
 
 var selectedObjects = []; //選択された画像名のリスト
-var imgFolderName = "img/"
+var imgFolderName = "img/";
 
 function init() {
 	var drinkObjects = [];
@@ -12,6 +12,7 @@ function init() {
 	var repo_d = document.getElementById("repo_d");
 	var ari_v = document.getElementById("ari_v");
 	var tiobita = document.getElementById("tiobita");
+	var select_button = document.getElementById("select");
 	
 	drinkObjects[0] = raizin;
 	drinkObjects[1] = redbull;
@@ -21,7 +22,7 @@ function init() {
 	drinkObjects[5] = tiobita;
 	
 	imageset(drinkObjects);
-	eventAdd(drinkObjects);
+	eventAdd(drinkObjects, select_button);
 }
 
 /*
@@ -40,7 +41,7 @@ function imageset(drinkObjects) {
 /*
  *クリックイベントを追加する関数
  */
-function eventAdd(drinkObjects) {
+function eventAdd(drinkObjects, select_button) {
     //各エレメントに選択状態イベントの追加
 	drinkObjects.forEach(
 		function(drinkObject) {
@@ -51,6 +52,13 @@ function eventAdd(drinkObjects) {
 			}
 		}
 	);
+	
+	if (select_button.addEventListener) { 
+		select_button.addEventListener('click', drawChart, false);
+	} else if (select_button.attachEvent) { //for IE
+		select_button.attachEvent('click', drawChart);
+	}
+	
 }
 
 /*
