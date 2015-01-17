@@ -17,35 +17,86 @@ h2 {
 	padding: 10px;
 	margin: 0 auto;
 }
+.title img {
+	display: block;
+	margin: 0 auto;
+}
+.read {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+.read span {
+	padding: 0 60px;
+	font-weight: bold;
+}
+.vendingmachine {
+	background-color: #24090b;
+	padding: 75px 0;
+	border-radius: 3px;
+}
+.drinklist {
+	margin: 0 auto;
+	width: 650px;
+}
 .drinklist li {
 	float: left;
 	margin-left: 10px;
-	background-color: #ccc;
 }
 .drinklist li:first-child {
 	margin-left: 0;
 }
+.drinklist img {
+	vertical-align: bottom;
+}
+/*.button {
+	width: 100px;
+	height: 20px;
+	background-color: #333333;
+}*/
+#redbull:checked {
+	background-color: #fff;
+}
+.searchbutton {
+	margin-top: 20px;
+}
+.searchbutton img {
+	display: block;
+	margin: 0 auto;
+}
 .grapharea {
-	margin: 10px auto;
-	height: 500px;
-	background: #cccccc;
+	margin-top: 20px;
+	padding: 20px;
+	background: #f6d104;
+}
+.grapharea h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.chart_div {
+	margin: 0 auto;
 }
 .drink {
-	position: relative;
-	background: #cccccc;
-	height: 500px;
+	margin-top: 60px;
 }
-.drink-obj {
-	position: absolute;
-	top: 100px;
-	left: 120px;
+.drink-obj-r {
+	float: left;
+	width: 300px;
+	margin-left: 100px;
+}
+.drink-tweet-r {
+	background-image: url(../img/comment_r.png);
+	width: 463px;
+	height: 265px;
+	float: right;
+}
+.drink-obj-l {
+	float: right;
 	width: 300px;
 }
-.drink-tweet {
-	width: 300px;
-	height: 300px;
-	background-color: #666666;
-	position: absolute;
-	top: 100px;
-	right: 100px;
+.drink-tweet-l {
+	background-image: url(../img/comment_l.png);
+	width: 463px;
+	height: 265px;
+	float: left;
 }

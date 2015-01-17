@@ -15,30 +15,73 @@
 </head>
 <body>
 	<div class="wrapper">
+		<div class="title">
+			<h1><img src="img/title.png" alt="EnergySearch" width="392"></h1>
+			<p class="read"><span>"</span>栄養ドリンクを比較するならEnergy Search<span>"</span></p>
+		</div>
 		<div class="section">
 			<div class="vendingmachine">
 				<ul class="drinklist section group cf">
-					<li class="col span_1_of_5"><img src="" alt="" width="100" height="200"></li>
-					<li class="col span_1_of_5"><img src="" alt="" width="100" height="200"></li>
-					<li class="col span_1_of_5"><img src="" alt="" width="100" height="200"></li>
-					<li class="col span_1_of_5"><img src="" alt="" width="100" height="200"></li>
-					<li class="col span_1_of_5"><img src="" alt="" width="100" height="200"></li>
+					<li>
+						<label class="redbull" for="redbull">
+							<img src="img/raizin_s.png" alt="" width="75">
+						</label>
+						<input type="checkbox" id="redbull" class="button">
+					</li>
+					<li>
+						<label class="redbull" for="raizin">
+							<img src="img/redbull_s.png" alt="" width="75">
+						</label>
+						<input type="checkbox" id="raizin" class="button">
+					</li>
+					<li>
+						<label class="redbull" for="tiobita">
+							<img src="img/monster_s.png" alt="" width="75">
+						</label>
+						<input type="checkbox" id="tiobita" class="button">
+					</li>
+					<li>
+						<label class="redbull" for="ripovitanD">
+							<img src="img/ripod_s.png" alt="" width="75">
+						</label>
+						<input type="checkbox" id="ripovitanD" class="button">
+					</li>
+					<li>
+						<label class="redbull" for="monster">
+							<img src="img/alinamin_s.png" alt="" width="75">
+						</label>
+						<input type="checkbox" id="monster" class="button">
+					</li>
+					<li>
+						<label class="redbull" for="alinamin">
+							<img src="img/tiovita_s.png" alt="" width="75">
+						</label>
+						<input type="checkbox" id="alinamin" class="button">
+					</li>
 				</ul>
 			</div>
+			<div class="searchbutton">
+				<img src="img/searchbutton.png" alt="" width="200">
+			</div>
 		</div>
-
-		<div class="section group">
-			<div class="grapharea"></div>
-
-		<div id ="chart_div" class="section" style="width:100%; height:600px">
-
+		<div class="grapharea">
+			<h2>比較表</h2>
+			<div id ="chart_div" class="chart_div" style="width:910px; height:500px"></div>
 		</div>
 		<div class="drink section group cf">
-			<div class="drink-obj">
-				<img src="img/monster.png" alt="" width="115" height="300">
+			<div class="drink-obj-r">
+				<img src="img/alinamin_b.png" alt="" width="115" height="300">
 			</div>
-			<div class="drink-tweet">
+			<div class="drink-tweet-r">
 
+			</div>
+		</div>
+		<div class="drink section group cf">
+			<div class="drink-tweet-l">
+
+			</div>
+			<div class="drink-obj-l">
+				<img src="img/raizin_b.png" alt="">
 			</div>
 		</div>
 	</div>
