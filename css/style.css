@@ -79,24 +79,34 @@ h2 {
 .drink {
 	margin-top: 60px;
 }
-.drink-obj-r {
-	float: left;
+.drink-obj {
 	width: 300px;
 	margin-left: 100px;
 }
+.drink-tweet {
+	width: 480px;
+	height: 260px;
+	overflow-y: scroll;
+}
 .drink-tweet-r {
 	background-image: url(../img/comment_r.png);
-	width: 463px;
-	height: 265px;
-	float: right;
+	background-repeat: no-repeat;
 }
-.drink-obj-l {
-	float: right;
+.drink-obj {
 	width: 300px;
 }
 .drink-tweet-l {
 	background-image: url(../img/comment_l.png);
-	width: 463px;
-	height: 265px;
+	background-repeat: no-repeat;
+}
+.tweet_text {
+	margin: 40px;
+	margin-left: 100px;
+	border-bottom: 1px solid #000;
+}
+.fl {
 	float: left;
+}
+.fr {
+	float: right;
 }

@@ -12,9 +12,7 @@ $.ajax({
     url: "http://157.7.204.121/twitter_search.php?word=" + name,
 }).done(function(data){
 	data.forEach(function(tweet, index){
-		$(".drink-tweet-r").append("<div class='tweet_text'>");
-		$(".drink-tweet-r").append(tweet.text);
-		$(".drink-tweet-r").append("</div>");
+		$(".drink-tweet-r").append("<div class='tweet_text'>" + tweet.text + "</div>");
 	});
 }).fail(function(error){
     console.log(error);
