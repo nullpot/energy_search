@@ -13,6 +13,7 @@ function init() {
 	var ari_v = document.getElementById("ari_v");
 	var tiobita = document.getElementById("tiobita");
 	var select_button = document.getElementById("select");
+	var reset_button = document.getElementById("reset");
 	
 	drinkObjects[0] = raizin;
 	drinkObjects[1] = redbull;
@@ -22,7 +23,7 @@ function init() {
 	drinkObjects[5] = tiobita;
 	
 	imageset(drinkObjects);
-	eventAdd(drinkObjects, select_button);
+	eventAdd(drinkObjects, select_button,reset);
 }
 
 /*
@@ -41,7 +42,7 @@ function imageset(drinkObjects) {
 /*
  *クリックイベントを追加する関数
  */
-function eventAdd(drinkObjects, select_button) {
+function eventAdd(drinkObjects, select_button,reset_button) {
     //各エレメントに選択状態イベントの追加
 	drinkObjects.forEach(
 		function(drinkObject) {
@@ -61,6 +62,12 @@ function eventAdd(drinkObjects, select_button) {
 		select_button.attachEvent('click', drawChart);
 		select_button.attachEvent('click', getTwitter);
 		select_button.attachEvent('click', setTwitterImg);
+	}
+	
+	if (reset_button.addEventListener) {
+		reset_button.addEventListener('click', resetSelect, false);
+	} else if (reset_button.attachEvent) { //for IE
+		reset_button.attachEvent('click', resetSelect);
 	}
 }
 
@@ -87,4 +94,13 @@ function getClick(event) {;
 	console.log(selectedObjects);
 }
 
-
+/*
+ *画像選択をリセットする関数
+ */
+ function resetSelect() {
+	 //チェックボックスをリセット
+	 $("input:checkbox").attr("checked",false); 
+	 
+	 //選択状態を保存する配列をリセット
+     selectedObjects = []; 
+ }

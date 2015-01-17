@@ -57,7 +57,11 @@ h2 {
 #redbull:checked {
 	background-color: #fff;
 }
-.searchbutton {
+.buttonarea {
+	width: 500px;
+	margin: 0 auto;
+}
+.resetbutton, .searchbutton {
 	margin-top: 20px;
 }
 .searchbutton img {
