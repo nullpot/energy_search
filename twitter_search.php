@@ -10,7 +10,7 @@
 
 	//Twitterで検索するワード
 	//$search_word = array('redbull'); // 3つまでOKだったはず
-	$search_word = array($_GET['word']); // 3つまでOKだったはず
+	$search_word = array(htmlspecialchars($_GET['word'], ENT_QUOTES)); // 3つまでOKだったはず
 
 		//API実行データ取得
 		//現時点で100ツイートまでしか取得不可
@@ -22,6 +22,8 @@
 
 		//オブジェクトを展開
 		$oObj		= $oObj->{'statuses'};	// API 1.1でresultsからstatusesに変更
+		header('Access-Control-Allow-Origin: *');
+		header("Content-Type: application/json; charset=utf-8");
 		print_r(json_encode($oObj));
 
 	//for($i_tweet = 0; $i_tweet < sizeof($oObj); $i_tweet++){
