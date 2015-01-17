@@ -1,3 +1,4 @@
+function getTwitter(){
 var name = drinks[Number(selectedObjects[0])].name;
 
 $.ajax({
@@ -11,3 +12,4 @@ $.ajax({
 }).fail(function(error){
     console.log(error);
 });
+}
