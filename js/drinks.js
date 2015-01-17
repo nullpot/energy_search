@@ -1,6 +1,6 @@
 var drinks = [{
     name: "ライジン",
-    image: "raizin.png"
+    image: "raizin.png",
     energy: 43.1,
     protein: 0,
     fat: 0,
@@ -22,7 +22,7 @@ var drinks = [{
     d_ribose: 0
 }, {
     name: "レッドブル",
-    image: ""
+    image: "redbull.png",
     energy: 46,
     protein: 0,
     fat: 0,
@@ -45,7 +45,7 @@ var drinks = [{
     taurine: 0
 }, {
     name: "モンスターエナジー",
-    image: ""
+    image: "monster_energy.png",
     energy: 0,
     protein: 0,
     fat: 0,
@@ -67,7 +67,7 @@ var drinks = [{
     d_ribose: 0
 }, {
     name: "リポビタンD",
-    image: ""
+    image: "",
     energy: 0,
     protein: 0,
     fat: 0,
@@ -89,7 +89,7 @@ var drinks = [{
     d_ribose: 0
 }, {
     name: "アリナミンV",
-    image: ""
+    image: "",
     energy: 0,
     protein: 0,
     fat: 0,
@@ -111,7 +111,7 @@ var drinks = [{
     d_ribose: 0
 }, {
     name: "チオビタドリンク",
-    image: ""
+    image: "",
     energy: 70,
     protein: 0,
     fat: 0,
