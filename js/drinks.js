@@ -23,25 +23,26 @@ var drinks = [{
 }, {
     name: "レッドブル",
     image: ""
-    energy: 0,
+    energy: 46,
     protein: 0,
     fat: 0,
     natrium: 0,
-    carbohydrate: 0,
-    vitamin_b: 0,
-    vitamin_b2: 0,
+    carbohydrate: 10.7,
+    vitamin_b: 62,
+    vitamin_b2: 0.09,
     vitamin_b6: 0,
-    vitamin_b12: 0,
+    vitamin_b12: 2,
     vitamin_c: 0,
-    niacin: 0,
+    niacin: 3,
     inositol: 0,
-    caffeine: 0,
-    arginine: 0,
-    pantothenic_acid: 0,
+    caffeine: 80,
+    arginine: 120,
+    pantothenic_acid: 2,
     valine: 0,
     isoleucine: 0,
     leucine: 0,
-    d_ribose: 0
+    d_ribose: 0,
+    taurine: 0
 }, {
     name: "モンスターエナジー",
     image: ""
