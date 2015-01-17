@@ -45,25 +45,26 @@ var drinks = [{
 }, {
     name: "モンスターエナジー",
     image: ""
-    energy: 0,
+    energy: 50,
     protein: 0,
     fat: 0,
-    natrium: 0,
-    carbohydrate: 0,
+    natrium: 78,
+    carbohydrate: 12.6,
     vitamin_b: 0,
-    vitamin_b2: 0,
-    vitamin_b6: 0,
-    vitamin_b12: 0,
+    vitamin_b2: 0.7,
+    vitamin_b6: 0.8,
+    vitamin_b12: 0.001,
     vitamin_c: 0,
-    niacin: 0,
+    niacin: 8.5,
     inositol: 0,
-    caffeine: 0,
-    arginine: 0,
+    caffeine: 40,
+    arginine: 125,
     pantothenic_acid: 0,
     valine: 0,
     isoleucine: 0,
     leucine: 0,
-    d_ribose: 0
+    d_ribose: 125,
+    taurine: 0
 }, {
     name: "リポビタンD",
     image: ""
