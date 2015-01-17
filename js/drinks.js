@@ -89,20 +89,20 @@ var drinks = [{
     d_ribose: 0
 }, {
     name: "アリナミンV",
-    image: ""
+    image: "alinaminv.png"
     energy: 0,
     protein: 0,
     fat: 0,
     natrium: 0,
     carbohydrate: 0,
     vitamin_b: 0,
-    vitamin_b2: 0,
-    vitamin_b6: 0,
+    vitamin_b2: 2,
+    vitamin_b6: 10,
     vitamin_b12: 0,
     vitamin_c: 0,
     niacin: 0,
     inositol: 0,
-    caffeine: 0,
+    caffeine: 50,
     arginine: 0,
     pantothenic_acid: 0,
     valine: 0,
