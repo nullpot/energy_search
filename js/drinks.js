@@ -111,7 +111,7 @@ var drinks = [{
     d_ribose: 0
 }, {
     name: "チオビタドリンク",
-    image: ""
+    image: "",
     energy: 70,
     protein: 0,
     fat: 0,
