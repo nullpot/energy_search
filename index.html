@@ -8,10 +8,12 @@
 	<link rel="stylesheet" href="css/cols.css" media="all">
 	<link rel="stylesheet" href="css/5cols.css" media="all">
 
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<script src="js/drinks.js"></script>
+	<script type = "text/javascript" src  = "js/imageset.js"></script>
 	<script src="js/charts.js"></script>
-
+	<script src="js/twitter.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -24,44 +26,44 @@
 				<ul class="drinklist section group cf">
 					<li>
 						<label class="redbull" for="redbull">
-							<img src="img/raizin_s.png" alt="" width="75">
+							<img src="img/raizin.png" alt="" width="75" id = "raizin" name = "0">
 						</label>
 						<input type="checkbox" id="redbull" class="button">
 					</li>
 					<li>
 						<label class="redbull" for="raizin">
-							<img src="img/redbull_s.png" alt="" width="75">
+							<img src="img/redbull.png" alt="" width="75" id = "redbull" name = "1">
 						</label>
 						<input type="checkbox" id="raizin" class="button">
 					</li>
 					<li>
 						<label class="redbull" for="tiobita">
-							<img src="img/monster_s.png" alt="" width="75">
+							<img src="img/monster_energy.png" alt="" width="75" id = "monster_energy" name ="2">
 						</label>
 						<input type="checkbox" id="tiobita" class="button">
 					</li>
 					<li>
 						<label class="redbull" for="ripovitanD">
-							<img src="img/ripod_s.png" alt="" width="75">
+							<img src="img/repo_d.png" alt="" width="75" id = "repo_d" name = "3">
 						</label>
 						<input type="checkbox" id="ripovitanD" class="button">
 					</li>
 					<li>
 						<label class="redbull" for="monster">
-							<img src="img/alinamin_s.png" alt="" width="75">
+							<img src="img/alinamin_s.png" alt="" width="75" id = "ari_v" name = "4">
 						</label>
 						<input type="checkbox" id="monster" class="button">
 					</li>
 					<li>
 						<label class="redbull" for="alinamin">
-							<img src="img/tiovita_s.png" alt="" width="75">
+							<img src="img/tiovita_s.png" alt="" width="75" id = "tiobita" name ="5">
 						</label>
 						<input type="checkbox" id="alinamin" class="button">
 					</li>
 				</ul>
 			</div>
 			<div class="searchbutton">
-				<img src="img/searchbutton.png" alt="" width="200">
+				<img src="img/searchbutton.png" alt="" width="200" id="select">
 			</div>
 		</div>
 		<div class="grapharea">
@@ -69,8 +71,8 @@
 			<div id ="chart_div" class="chart_div" style="width:910px; height:500px"></div>
 		</div>
 		<div class="drink section group cf">
-			<div class="drink-obj-r">
-				<img src="img/alinamin_b.png" alt="" width="115" height="300">
+			<div class="drink-obj">
+				<img id ="twitter_img" src="img/monster.png" alt="" width="115" height="300">
 			</div>
 			<div class="drink-tweet-r">
 
@@ -81,7 +83,7 @@
 
 			</div>
 			<div class="drink-obj-l">
-				<img src="img/raizin_b.png" alt="">
+				<img id ="twitter_img" src="img/raizin_b.png" alt="" width="115" height="300">
 			</div>
 		</div>
 	</div>

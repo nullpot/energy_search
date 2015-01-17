@@ -46,7 +46,7 @@ var drinks = [{
     taurine: 0
 }, {
     name: "レッドブル",
-    image: "",
+    image: "redbull.png",
     energy: 46,
     protein: 0,
     fat: 0,
@@ -69,7 +69,7 @@ var drinks = [{
     taurine: 0
 }, {
     name: "モンスターエナジー",
-    image: "",
+    image: "monster_energy.png",
     energy: 0,
     protein: 0,
     fat: 0,
@@ -115,7 +115,7 @@ var drinks = [{
     taurine: 1000
 }, {
     name: "アリナミンV",
-    image: "",
+    image: "alinamin_s.png",
     energy: 0,
     protein: 0,
     fat: 0,
@@ -138,7 +138,7 @@ var drinks = [{
     taurine: 0
 }, {
     name: "チオビタドリンク",
-    image: "",
+    image: "tiovita_s.png",
     energy: 70,
     protein: 0,
     fat: 0,
