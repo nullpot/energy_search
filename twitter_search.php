@@ -22,6 +22,7 @@
 
 		//オブジェクトを展開
 		$oObj		= $oObj->{'statuses'};	// API 1.1でresultsからstatusesに変更
+		header('Access-Control-Allow-Origin: *');
 		header("Content-Type: application/json; charset=utf-8");
 		print_r(json_encode($oObj));
 
