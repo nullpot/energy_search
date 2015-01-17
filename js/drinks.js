@@ -1,3 +1,26 @@
+var integrants = [
+    "エネルギー",
+    "タンパク質",
+    "脂質",
+    "ナトリウム",
+    "炭水化物",
+    "ビタミンB",
+    "ビタミンB2",
+    "ビタミンB16",
+    "ビタミンB12",
+    "ビタミンC",
+    "ナイアシン",
+    "イノシトール",
+    "カフェイン",
+    "アルギニン",
+    "パントテン酸",
+    "バリン",
+    "イソルイシン",
+    "ルイシン",
+    "リボース",
+    "タウリン"
+];
+
 var drinks = [{
     name: "ライジン",
     image: "raizin.png",
@@ -19,7 +42,8 @@ var drinks = [{
     valine: 0,
     isoleucine: 0,
     leucine: 0,
-    d_ribose: 0
+    d_ribose: 0,
+    taurine: 0
 }, {
     name: "レッドブル",
     image: "redbull.png",
@@ -64,29 +88,31 @@ var drinks = [{
     valine: 0,
     isoleucine: 0,
     leucine: 0,
-    d_ribose: 0
+    d_ribose: 0,
+    taurine: 0
 }, {
     name: "リポビタンD",
-    image: "",
+    image: "repo_d.png",
     energy: 0,
     protein: 0,
     fat: 0,
     natrium: 0,
     carbohydrate: 0,
     vitamin_b: 0,
-    vitamin_b2: 0,
-    vitamin_b6: 0,
+    vitamin_b2: 5,
+    vitamin_b6: 5,
     vitamin_b12: 0,
     vitamin_c: 0,
-    niacin: 0,
-    inositol: 0,
-    caffeine: 0,
+    niacin: 20,
+    inositol: 50,
+    caffeine: 50,
     arginine: 0,
     pantothenic_acid: 0,
     valine: 0,
     isoleucine: 0,
     leucine: 0,
-    d_ribose: 0
+    d_ribose: 0,
+    taurine: 1000
 }, {
     name: "アリナミンV",
     image: "",
@@ -108,7 +134,8 @@ var drinks = [{
     valine: 0,
     isoleucine: 0,
     leucine: 0,
-    d_ribose: 0
+    d_ribose: 0,
+    taurine: 0
 }, {
     name: "チオビタドリンク",
     image: "",
